@@ -4362,7 +4362,6 @@
 
         // Get User IP
         var url = 'https://api.db-ip.com/v2/free/self/'
-        
         async function getUserIp() {
             const response = await fetch(url);
             if (response.status == 200) {
@@ -4371,12 +4370,14 @@
                     'user_ip': data.ipAddress,
                     'country': data.countryName,
                     'country_code': data.countryCode,
+                    'city': data.city
                 }
             } else {
                 userIpData = {
                     'user_ip': 'Ip not detected ;(',
                     'country': '-',
                     'country_code': '-',
+                    'city': '-'
                 }
             }
         }
